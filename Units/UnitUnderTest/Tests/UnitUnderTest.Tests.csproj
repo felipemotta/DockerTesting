@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DebugType>pdbonly</DebugType>
+    <TargetFrameworks>net461;netcoreapp2.1;</TargetFrameworks>
+    <AssemblyName>DevExperience.UnitUnderTest.Tests</AssemblyName>
+    <RootNamespace>DevExperience.UnitUnderTest.Tests</RootNamespace>
+    <generateassemblyinfo>false</generateassemblyinfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="FluentAssertions" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Source\UnitUnderTest.csproj" />
+  </ItemGroup>
+
+</Project>
